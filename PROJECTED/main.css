@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    padding-left: 12.5%;
+}
+.header .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .nav-list .judul {
+    font-size: 40px;
+    color:#3B29E3;
+}
+.header .nav-list .menu {
+    display: flex;
+    gap: 35px;
+    font-size: 1.3rem;
+    list-style: none;
+    font-weight: 400;
+}
+.nav-list a {
+    color: #150EB4;
+}
+.nav-list a:hover {
+    color: #735BF3;
+}
+.sidebar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background-color: #9185FD;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 30px black;
+}
+.sidebar .icon {
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 10px;
+}
+.icon img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.icon span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.sidebar ul a {
+    position: relative;
+    padding-left: 15px;
+    font-size: 15px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+    color: black;
+}
+.sidebar ul i {
+    position: relative;
+    width: 75px;
+    height: 40px;
+    top: 14px;
+    font-size: 22px;
+    text-align: center;
+}
+.sidebar .nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 15px;
+}
+.sidebar a:hover {
+    background-color: #544DF7;
+    color: white;
+}
+.sidebar:hover {
+    width: 280px;
+    transition: all 0.5 ease;
+}
+.keluar {
+    position: absolute;
+    bottom: 0;
+}
+
+section .content h1 {
+    padding-left: 50%;
+    font-size: 3rem;
+    color: #544DF7;
+    line-height: 105px;
+}
+section .content .grup {
+    width: 1500px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 450px;
+    gap: 50px;
+    padding-left: 225px;
+}
+section .content .grup img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: 1s;
+}
+section .content .grup .kartu:hover {
+    transform: scale(1.1);
+}
+section .content .grup .kartu {
+    color: white;
+    position: relative;
+    transition: 1s;
+}
+section .content .grup .kartu .isi {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 20px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s;
+}
+section .grup .kartu:hover .isi {
+    opacity: 1;
+    transform: translateY(0);
+}
+section .grup:hover .kartu:not(:hover) {
+    filter: blur(5px);
+}
+section .grup .kartu .text {
+    color: white;
+    font-size: 1.2rem;
+} 
